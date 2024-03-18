@@ -16,55 +16,83 @@
   </head>
   <body>
     <header>
-      <div class="header-logo">
-        <a href="index.html"><img src="img/logo.png" alt="" /></a>
-      </div>
-      <div class="header-menubar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="header-icon">
-        <ion-icon class="icon" name="person-outline"></ion-icon>
-        <ion-icon class="icon" name="search-outline"></ion-icon>
-        <ion-icon class="icon" name="heart-outline"></ion-icon>
-        <ion-icon class="icon" name="cart-outline"></ion-icon>
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
+          </div>
+          <div class="header-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header-icon">
+            <li>
+              <a href="login.html"
+                ><ion-icon class="icon" name="person-outline"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><ion-icon class="icon" name="search-outline"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><ion-icon class="icon" name="heart-outline"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="cart.html"
+                ><ion-icon class="icon" name="cart-outline"></ion-icon
+              ></a>
+            </li>
+          </div>
+          <div class="header-icon-responsive">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+        </div>
       </div>
     </header>
     <div class="banner">
       <img src="img/banner.png" alt="" />
       <p class="logo"><img src="img/Meubel House_Logos-05.png" alt="" /></p>
-      <p class="banner-trangchu mt-50 size-50">Checkout</p>
+      <p class="banner-trangchu size-50">Checkout</p>
       <p class="banner-home">Home > Checkout</p>
     </div>
     <main>
       <div class="main-checkout-box container">
-        <div class="main-checkout-box1">
-          <div class="main-checkout-box1-form">
+        <div class="main-checkout-item">
+          <div class="main-checkout-item-form">
             <form action="">
-              <h1 class="mt-40 mgl-50">Billing details</h1>
-              <div class="firtname-lastname">
-                <label for="">First Name</label>
-                <label class="mgl-50" for="">last Name</label><br />
+              <h1 class="main-checkout-title">Billing details</h1>
+              <div class="main-checkout-firt-last">
+                <div class="firtname-lastname">
+                  <label for="">First Name</label><br /><br /><input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+                <div class="ipfirtname-iplastname">
+                  <label for="">last Name</label><br /><br />
+                  <input type="text" class="form-control" />
+                </div>
               </div>
-              <div class="ipfirtname-iplastname">
-                <input type="text" />
-                <input type="text" />
-              </div>
+
               <br />
               <div class="form">
                 <label for="">Company Name (Optional)</label><br /><br />
-                <input class="form-control" type="text" /><br />
+                <input class="form-control" type="text" /><br /><br />
                 <label for="">Country / Region</label><br /><br />
                 <select class="form-control" name="" id="">
-                  <option value="">...</option>
-                  <option value="">viet nam</option>
-                  <option value="">ờ meo ri cờ</option>
-                  <option value="">thái lan</option></select
-                ><br />
+                  <option value="">Hàn Quốc</option>
+                  <option value="">Việt Nam</option>
+                  <option value="">Mỹ</option>
+                  <option value="">Thái Lan</option></select
+                ><br /><br />
                 <label for="">Street address</label><br /><br />
                 <input class="form-control" type="text" /><br /><br />
                 <label for="">Town / City</label><br /><br />
@@ -76,10 +104,7 @@
                 <label for="">Phone</label><br /><br />
                 <input class="form-control" type="text" /><br /><br />
                 <label for="">Email address</label><br /><br />
-                <input
-                  class="form-control"
-                  type="text"
-                /><br /><br /><br /><br />
+                <input class="form-control" type="text" /><br /><br /><br />
                 <input
                   class="form-control"
                   type="text"
@@ -89,38 +114,36 @@
             </form>
           </div>
         </div>
-        <div class="main-checkout-box2 mgl-20">
-          <div class="main-checkout-box2-box">
-            <div class="main-checkout-box2-box1">
+        <div class="main-checkout-item">
+          <div class="main-checkout-box">
+            <div class="main-checkout-box-item">
               <p class="size24">Product</p>
-              <p class="s16-gray pd">Asgaard sofa x1</p>
+              <p class="s16-gray">Asgaard sofa x1</p>
               <p>Subtotal</p>
-              <p class="pd">Total</p>
+              <p class="">Total</p>
             </div>
-            <div class="main-checkout-box2-box2">
+            <div class="main-checkout-box-item">
               <p class="size24">Subtotal</p>
-              <p class="s16 pd">25.000.000đ</p>
               <p class="s16">25.000.000đ</p>
-              <p class="size-nau-24 pd">25.000.000đ</p>
+              <p class="s16">25.000.000đ</p>
+              <p class="size-nau-24">25.000.000đ</p>
             </div>
           </div>
           <span></span>
           <div class="input-radio">
-            <input type="radio" /> <a class="mgl-10">Direct Bank Transfer</a>
-            <p class="pd size16-9F9F9F">
+            <input type="radio" /> <a class="">Direct Bank Transfer</a>
+            <p class="size16-9F9F9F">
               Make your payment directly into our bank account. Please use your
               Order ID as the payment reference. Your order will not be shipped
               until the funds have cleared in our account.
             </p>
-            <input type="radio" /><a class="mgl-10 size16-9F9F9F"
+            <input type="radio" /><a class="size16-9F9F9F"
               >Direct Bank Transfer</a
             >
             <br />
-            <input type="radio" /><a class="mgl-10 size16-9F9F9F"
-              >Cash On Delivery</a
-            >
+            <input type="radio" /><a class="size16-9F9F9F">Cash On Delivery</a>
 
-            <p class="pd">
+            <p class="">
               Your personal data will be used to support your experience
               throughout this website, to manage access to your account, and for
               other purposes described in our <b>privacy policy.</b>
@@ -132,54 +155,67 @@
     </main>
     <div class="service">
       <div class="service-box">
-        <div class="service-trophy center">
-          <img src="img/trophy 1.png" alt="" />
-          <h4>High Quality</h4>
-          <p>crafted from top materials</p>
-        </div>
-        <div class="service-Group center">
-          <img src="img/Group.png" alt="" />
-          <h4>Warranty Protection</h4>
-          <p>Over 2 years</p>
-        </div>
-        <div class="service-shipping center">
-          <img src="img/shipping.png" alt="" />
-          <h4>Free Shipping</h4>
-          <p>Order over 150 $</p>
-        </div>
-        <div class="service-customer center">
-          <img src="img/customer-support.png" alt="" />
-          <h4>24 / 7 Support</h4>
-          <p>Dedicated support</p>
+        <div class="service-box-list">
+          <div class="service-item center">
+            <img src="img/trophy 1.png" alt="" />
+            <div class="service-item-info">
+              <h4>High Quality</h4>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div class="service-item center">
+            <img src="img/Group.png" alt="" />
+            <div class="service-item-info">
+              <h4>Warranty Protection</h4>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div class="service-item center">
+            <img src="img/shipping.png" alt="" />
+            <div class="service-item-info">
+              <h4>Free Shipping</h4>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div class="service-item center">
+            <img class="item" src="img/customer-support.png" alt="" />
+            <div class="service-item-customer">
+              <h4>24 / 7 Support</h4>
+              <p>Dedicated support</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <footer>
       <div class="footer">
-        <div class="footer-box1">
+        <div class="footer-item">
           <h2>Funiro.</h2>
-          <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+          <p class="footer-item-position">
+            400 University Drive Suite 200 Coral Gables, <br />
+            FL 33134 USA
+          </p>
         </div>
-        <div class="footer-box2">
+        <div class="footer-link">
           <p>Links</p>
           <li><a href="">Home</a></li>
           <li><a href="">Shop</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </div>
-        <div class="footer-box2">
+        <div class="footer-help">
           <p>Help</p>
           <li><a href="">Payment Options</a></li>
           <li><a href="">Returns</a></li>
           <li><a href="">Privacy Policies</a></li>
         </div>
-        <div class="footer-box2 mgr-15">
+        <div class="footer-search">
           <p>Newsletter</p>
           <input type="text" placeholder="Enter Your Email Address" />
           <button>SUBSCRIBE</button>
         </div>
       </div>
-      <hr class="container" />
+      <hr />
       <p class="date container">2023 furino. All rights reverved</p>
     </footer>
   </body>
